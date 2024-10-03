@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/addons/p5.sound.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self As System</title>
+</head>
+<body>
+    <main>
+        <div id="main-page-container">
+            <div class="heading-main">
+                <h1>System Log</h1>
+            </div>
+           
+            <div id="var-button">
+                <h3 id="log-button" class="button-style">log</h3>
+                
+                <div id="hidden-button">
+                    <div class="water-button button-style button-hover">
+                        <p>Water</p> <input id="water-input" class="input-field" placeholder="Enter number">
+                    </div>
+                <div class="sleep-button button-style button-hover">
+                    <p>Sleep</p> <input id="sleep-input" class="input-field" placeholder="Enter number">
+                </div>
+                <div class="people-button button-style button-hover">
+                    <p>Social</p> <input id="social-input" class="input-field" placeholder="Enter number">
+                </div>
+                <div class="steps-button button-style button-hover">
+                    <p>Steps</p> <input id="steps-input" class="input-field" placeholder="Enter number">
+                </div>
+                <button id="update-button" class="button-style button-hover style2">Update Sketch</button>
+                <button id="save-button" class="button-style button-hover style2">Save Log</button>
+
+                </div>
+            </div>
+
+            <div class="sketch-container">
+            <div id="sketch-canvas">
+                <script src="sketch.js"></script>
+            </div>
+            </div>
+            
+            <div id="saved">
+                <h1>
+                    Saved Logs
+                </h1>
+                <div class="stored">
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>

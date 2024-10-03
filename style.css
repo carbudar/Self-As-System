@@ -1,0 +1,166 @@
+.source-code-pro {
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: 1;
+    font-style: normal;
+  }
+
+body {
+    margin: 0;
+    max-width: 100vw;
+    height: auto; /* Use 'auto' for better layout control */
+    background-color: rgb(34, 33, 39);
+    gap: 0;
+    font-family: "Source Code Pro" ;
+}
+
+#main-page-container {
+    display: grid;
+    height: auto;
+    grid-template-rows: auto auto auto auto; /* Define rows with 'auto' height */
+    grid-template-columns: repeat(3, 1fr);   /* Columns for the grid */
+    padding: 4%;
+}
+
+.heading-main {
+    grid-area: 1 / 1 / 2 / 4;
+    font-size: 2rem;
+    color: rgb(150, 246, 77);
+    height: 15vh; 
+    align-content: center;
+    align-items: center;
+    display: flex;
+    }
+
+#canvasRadius{
+    border-radius: 30px;
+}
+
+#sketch-canvas {
+    width: 90vw;
+    height: 50vh;
+    border: 0.25px solid rgb(241, 21, 120);
+    border-radius: 30px;
+}
+
+
+#var-button {
+    grid-area: 2 / 1 / 3 / 4;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    height: 10vh; 
+}
+
+.sketch-container {
+    grid-area: 3 / 1 / 4 / 4;
+    padding-top: 4%;
+    padding-bottom: 2%;
+}
+
+.button-style {
+    display: flex;               /* Enable flexbox */
+    justify-content: center;     /* Center text horizontally */
+    align-items: center;   
+    background-color: blue;
+    color: white;
+    height: 5vh;
+    border-radius: 30px;
+    min-width: 7vw;
+    margin: 10px;
+    flex-grow:0;
+    border: none;
+}
+
+
+#log-button{
+    background-color: transparent;
+    border: 2px solid rgb(241, 21, 120);
+}
+#log-button:hover{
+    background-color: rgb(150, 246, 77);
+    color: rgb(241, 21, 120); ;
+}
+
+.style2{
+    background-color: rgb(150, 246, 77);
+}
+#hidden-button {
+    display: flex;
+    flex-direction: row;
+    opacity: 0;
+    visibility: hidden;
+    width:100%
+}
+
+.button-hover{
+    flex-grow: 0;
+    transition: flex-grow 0.3s ease; /* Smooth growth effect on hover */
+    max-width: 20vw;
+}
+
+.water-button {
+    background-color: rgb(17, 8, 98);
+    color: rgb(87, 75, 200);
+}
+
+.sleep-button {
+    background-color: rgb(113, 5, 70);
+    color: rgb(203, 49, 142);
+}
+
+.people-button {
+    background-color: rgb(146, 36, 14);
+    color: rgb(224, 87, 59);
+}
+
+.steps-button {
+    background-color: rgb(193, 152, 18);
+    color: rgb(250, 211, 82);
+}
+
+.button-hover:hover{
+    flex-grow: 1;
+    max-width: 20vw;
+    color: rgb(255, 255, 255);
+}
+
+.style2:hover{
+    color: rgb(241, 21, 120);
+}
+.input-field{
+    width: 7vw;
+    margin-left: 2vw;
+    outline: none; 
+    font-size: 70%;
+    visibility: hidden;
+    position: absolute;
+}
+
+.button-hover:hover .input-field {
+    visibility: visible;
+    position: relative;
+}
+
+#saved {
+    grid-area: 4 / 1 / 5 / 4; /* Adjusted to span correctly below sketch */
+    margin-top: 20px;
+    background-color: rgba(53,56,57,0.2);
+    padding: 10px;
+    border-radius: 10px;
+    overflow-y: auto; /* Allows for scrolling if content overflows */
+}
+
+#saved h1{
+    color: rgb(150, 246, 77);
+}
+
+.stored{
+    color:white
+}
+
+
+span{
+    color: rgb(241, 21, 120); ;
+}
