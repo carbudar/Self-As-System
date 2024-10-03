@@ -85,6 +85,7 @@ body {
 
 .style2{
     background-color: rgb(150, 246, 77);
+    font-family: "Source Code Pro";
 }
 #hidden-button {
     display: flex;
